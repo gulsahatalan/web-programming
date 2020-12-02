@@ -1,5 +1,5 @@
 //dogdugunuz ay ve gunu yazin.
-const month = 12; // agustos ayi
+const month = 8; // agustos ayi
 const day = 17;  //ayin 17. günü
 
 
