@@ -3,8 +3,6 @@ const AracMarkasi = "BMW"
 const AracinModeli = 2018
 const DaimiMusteriOlunanSure = 4
 
-
-
 if(DaimiMusteriOlunanSure>=5)
 {
 console.log ("Buyrun, degerli musterimiz nasil yardimci olabilirim? ")
@@ -14,11 +12,19 @@ else if (AracMarkasi=="VW" && AracinModeli<2018 && AracinModeli>2001 && AracReng
 console.log ("VW ozel tasarim.Size nasil yardimci olabilirim?")    
 }
 else if (AracMarkasi=="BMW" && AracRengi=="kirmizi" && AracinModeli<2019 && AracinModeli>2010)
+<<<<<<< HEAD
 {
 console.log ("BMW 2010-2019  .Size nasil yardimci olabilirim?")    
 }
 else if (AracMarkasi=="BMW" && AracRengi=="siyah" && AracinModeli>=2020)
 {
+=======
+{
+console.log ("BMW 2010-2019  .Size nasil yardimci olabilirim?")    
+}
+else if (AracMarkasi=="BMW" && AracRengi=="siyah" && AracinModeli>=2020)
+{
+>>>>>>> 19515e15b0225c91a455059f9be102f128842e6d
 console.log ("BMW yeni model .Size nasil yardimci olabilirim?")    
 }
 else if (AracMarkasi=="AUDI"  && (AracRengi=="siyah"||AracRengi=="kirmizi") && 
