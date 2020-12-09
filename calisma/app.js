@@ -1,20 +1,20 @@
-console.log ("merhaba");
+//console.log ("merhaba");
 
 
 //..alert ("hfghgjh") node da calismaz
-var tahminTekrarSayisi = 0;
-let tahmin_sayisi = 1;
-const toplam_hak_sayisi = 3;
-const oyunculari = "hi coders";
-console.log (tahmin tekrar sayisi);
-var $ =23;
-let _=3;
+//var tahminTekrarSayisi = 0;
+//let tahmin_sayisi = 1;
+//const toplam_hak_sayisi = 3;
+//const oyunculari = "hi coders";
+//console.log (tahmin tekrar sayisi);
+//var $ =23;
+//let _=3;
 
 // cabbar usta
 
 const AracRengi = "siyah"
-const AracMarkasi = "AUDI"
-const AracinModeli = 2018
+const AracMarkasi = "BMW"
+const AracinModeli = 20
 const DaimiMusteriOlunanSure = 4
 
 if(DaimiMusteriOlunanSure>=5)

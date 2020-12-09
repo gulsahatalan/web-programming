@@ -47,3 +47,11 @@ console.log ("AKREP burcusunuz")
  {
  console.log ("OGLAK burcusunuz")
  }
+ else if((month=="1" && day>22)||(month=="2" && day<20))
+ {
+ console.log ("KOVA burcusunuz")
+ }
+
+ 
+
+
