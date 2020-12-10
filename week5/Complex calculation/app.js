@@ -1,4 +1,4 @@
-let ogrencilerinNotlari = [100, 90, 80, 40, 50, 60, 70, 80, 90, 100];
+let ogrencilerinNotlari = [10, 90, 80, 140, 50, 60, 70, 80, 90, 10];
 
 //karekokunu hesaplama
 for (let i = 0; i < ogrencilerinNotlari.length; i++) {
@@ -32,7 +32,8 @@ console.log("sayilarin ortalamasi: " + toplam / ogrencilerinNotlari.length);
 let enBuyuk = ogrencilerinNotlari[0];
 result = enBuyuk;
 for (let i = 0; i <= ogrencilerinNotlari.length; i++) {
-  if (ogrencilerinNotlari[i] > enBuyuk) {
+  if (ogrencilerinNotlari[i] >= enBuyuk) {
+    enBuyuk = ogrencilerinNotlari[i];
     result = ogrencilerinNotlari[i];
   }
 }
