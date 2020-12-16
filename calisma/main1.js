@@ -1,28 +1,11 @@
-
-//let ogrenciDizisi =["habil","sali","hamide","salih"]
-//console.log (ogrenciDizisi[3]) ="halis";
-
-
-//let haftaninGunleri = ["pazartesi","sali","carsamba","persembe","cuma","cumartesi","pazar"]
-
-
-
-// aylar = new Array ("ocak","subat","mart")
-//let sayilar = [1,2,3,4,5,6,7,8,9]
-//console.log (sayilar[0])
-//console.log (sayilar[4])
-//console.log (sayilar[8])
-
-
-
-let ogrenciler = [90,80,70,80,60,40,60,70,80];
-let diziUzunlugu=ogrenciler.length;
-
-//let suphelininVagonu=Math.round(Math.random() * 9)+1 ; 
-//console .log (suphelininVagonu)
-
-let ogrencilerinNotlari = [100, 90, 80, 40, 50, 60, 70, 80, 90, 100];
-function minDeger(ogrencilerinNotlari) {
-  return Math.min.apply(null, ogrencilerinNotlari);
+let obj;
+function upDate (previewPic){ 
+  document.getElementById(image).innerHTML= previewPic.alt;
+document.getElementById(image).style.background="url(` "+previewPic.src+" ` )" ;
 }
-console.log(minDeger(ogrencilerinNotlari));
+function unDo () {
+  let oldAlt ="HELLO"
+  document.getElementById(image).innerHTML= oldAlt;
+  document.getElementById(image).style.background="#8e68ff " ;
+document.getElementById(image).style.backgrounImage="url("+picture.src+")";
+}
