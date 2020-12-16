@@ -21,7 +21,6 @@ const ciftlikHayvanlari = [
   "domuz",
   "koyun",
   "inek",
-  "inek",
 ];
 const inekListesi = [];
 const tavukListesi = [];
