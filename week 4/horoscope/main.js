@@ -51,10 +51,6 @@ console.log ("AKREP burcusunuz")
  {
  console.log ("KOVA burcusunuz")
  }
-<<<<<<< HEAD
-
- 
 
 
-=======
->>>>>>> 19515e15b0225c91a455059f9be102f128842e6d
+

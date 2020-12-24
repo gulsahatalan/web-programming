@@ -1,53 +1,53 @@
-let ogrencilerinNotlari = [10, 90, 80, 140, 50, 60, 70, 80, 90, 10];
+let pArray = [10, 90, 80, 140, 50, 60, 70, 80, 90, 10];
 
 //karekokunu hesaplama
-for (let i = 0; i < ogrencilerinNotlari.length; i++) {
-  let karekok = Math.sqrt(ogrencilerinNotlari[i]);
-  console.log(`${ogrencilerinNotlari[i]} sayisinin karekoku ${karekok}`);
+for (let i = 0; i < pArray.length; i++) {
+  let karekok = Math.sqrt(pArray[i]);
+  console.log(`${pArray[i]} sayisinin karekoku ${karekok}`);
 }
 
 //karesini hesaplama
 
-for (let i = 0; i < ogrencilerinNotlari.length; i++) {
+for (let i = 0; i < pArray.length; i++) {
   console.log(
-    ogrencilerinNotlari[i] +
+    pArray[i] +
       "sayisinin karesi " +
-      ogrencilerinNotlari[i] * ogrencilerinNotlari[i]
+      pArray[i] * pArray[i]
   );
 }
 
 //tüm sayilarin toplamini hesaplama
 
 let toplam = 0;
-for (let i = 0; i < ogrencilerinNotlari.length; i++) {
-  toplam = toplam + ogrencilerinNotlari[i];
+for (let i = 0; i < pArray.length; i++) {
+  toplam = toplam + pArray[i];
 }
 console.log("sayilar toplami: " + toplam);
 //ortalamasini hesaplama
 
-console.log("sayilarin ortalamasi: " + toplam / ogrencilerinNotlari.length);
+console.log("sayilarin ortalamasi: " + toplam / pArray.length);
 
 //en büyük sayiyi bulma
 
-let enBuyuk = ogrencilerinNotlari[0];
+let enBuyuk = pArray[0];
 result = enBuyuk;
-for (let i = 0; i <= ogrencilerinNotlari.length; i++) {
-  if (ogrencilerinNotlari[i] >= enBuyuk) {
-    enBuyuk = ogrencilerinNotlari[i];
-    result = ogrencilerinNotlari[i];
+for (let i = 0; i <= pArray.length; i++) {
+  if (pArray[i] >= enBuyuk) {
+    enBuyuk = pArray[i];
+    result = pArray[i];
   }
 }
 console.log("En buyuk deger:" + result);
 
 // en kücük sayiyi bulma
 
-let enKucuk = ogrencilerinNotlari[0];
+let enKucuk = pArray[0];
 result = enKucuk;
-for (let i = 0; i <= ogrencilerinNotlari.length; i++) {
-  if (ogrencilerinNotlari[i] <= enKucuk) {
-    enKucuk = ogrencilerinNotlari[i];
+for (let i = 0; i <= pArray.length; i++) {
+  if (pArray[i] <= enKucuk) {
+    enKucuk = pArray[i];
 
-    result = ogrencilerinNotlari[i];
+    result = pArray[i];
   }
 }
 console.log("En kucuk deger:" + result);
