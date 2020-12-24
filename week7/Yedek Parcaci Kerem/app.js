@@ -4,30 +4,58 @@ Araba parcalari ise bir array icinde verilecektir.
 Kerem Bey'in istedigi program, asagiaki durumlari karsilamasi gerekmektedir.
 
 1. Parca isimleri büyük harflere cevrilecektir.
-2. Parca isimlerinden sayilar cikartilacaktir.
+2. Parca isimlerinden sayilar cikartilacaktir.    -
 3. Parca isimleri tersine cevrilecektir.
 4. Her parcanin basina KEREMAG_ eklenecektir.
 5. Her parcanin sonuna ise parcanin sisteme girildigi tarih eklenecektir. (Date nesnesini kullanarak tarih ve saat konulmasi yeterlidir)*/
 
-let arabaParcalari=["fren2","lastik4","tekerlek","tampon","camurluk","aks"];
-let parcaList=arabaParcalari.join(",")
+let arabaParcalari = [
+  "fren2",
+  "lastik4",
+  "tekerlek",
+  "tampon",
+  "camurluk",
+  "aks",
+];
+let parcaList = arabaParcalari.join(",");
 
-//let sayi = a.trim(Number)
+let turnUppercase = (pString) => pString.toUpperCase(); //buyuk harfe cevrildi
+let turnReverse = (pString) => pString.split("").reverse().join("");
+/**
+ * KEREMAG_ ekleyen fonksiyon
+ * @param {*} pString
+ */
+function addWord(pString) {
+  for (index = 0; index < arabaParcalari.length; index++) {
+    pString[index] = "KEREMAG_" + pString[index];
+  }
+  return pString;
+}
+/**
+ * icerisindeki numaralari silen fonksiyon
+ * @param {*} pString
+ */
+function cancelNumbers(pString) {
+  for (index = 0; index < pString.length; index++) {
+    pString[index] = pString[index].replace(/[0-9]/g, "");
+  }
+  return pString;
+}
+/**
+ * Tarih ekleyen fonksiyon
+ * @param {*} pString
+ */
+function addDate(pString) {
+  for (index = 0; index < pString.length; index++) {
+    pString[index] = pString[index] + "  " + Date();
+  }
+  return pString;
+}
 
-//console.log(parcaList.toUpperCase())
- 
-
-
-let buyult =(dizi)=> dizi.toUpperCase();    //buyuk harfe cevrildi
-
-console.log(buyult(parcaList));
-
-
-let tersCevir=(str)=>str.split( '' ).reverse( ).join( '' );   
-    
-
- console.log (tersCevir(parcaList))     // ters cevrildi
-
-
- 
-
+let uppercaseList = turnUppercase(parcaList);
+let reverseList = turnReverse(uppercaseList).split(",");
+let addList = addWord(reverseList);
+let cancelList = cancelNumbers(addList);
+let resultList = addDate(cancelList);
+//sonucu yazdir
+console.log(resultList);
