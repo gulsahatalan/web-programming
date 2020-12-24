@@ -16,7 +16,6 @@ const notes = [
   ["Urs", 49, 45, 56, 67],
   ["Monika", 49, 42, 16, 62],
 ];
-
 /**
  * ortalamyi bulan fonksiyon
  * @param {*} pIndex
@@ -30,18 +29,6 @@ function findAverage(pIndex, pNoteList) {
   }
   return toplam / notes.length;
 }
-
-// Tum derslerin ortlamasini ekrana yazdirma
-
-let averageMathNote = findAverage(1, notes);
-let averageGermanNote = findAverage(2, notes);
-let averageEnglishNote = findAverage(3, notes);
-let averageGeographyNote = findAverage(4, notes);
-console.log("Matematik dersinin ortalamasi: " + averageMathNote);
-console.log("German dersinin ortalamasi: " + averageGermanNote);
-console.log("English dersinin ortalamasi: " + averageEnglishNote);
-console.log("Geography dersinin ortalamasi: " + averageGeographyNote);
-
 /**
  *  70 puan ustu alanlarin isnmlerini bulan fonksiyon
  * @param {*} pIndex
@@ -59,20 +46,12 @@ function higher70(pIndex, pNoteList, pLessonNme) {
     pLessonNme + " Dersinden 70 puan ustu alanlarin isnmleri: " + newList
   );
 }
-
-//70 puan ustu alanlarin isnmlerini yazma
-higher70(1, notes, "Math");
-higher70(2, notes, "German");
-higher70(3, notes, "English");
-higher70(4, notes, "Geography");
-
 /**
  * ortalamanin ustunde olanlari bulan fonksiyon
  * @param {*} pindex
  * @param {*} pLessonName
  * @param {*} plist
  */
-
 function higherThanAvearage(pindex, pLessonName, plist, averageLesson) {
   let averageList = [];
   for (let index = 0; index < notes.length; index++) {
@@ -86,17 +65,9 @@ function higherThanAvearage(pindex, pLessonName, plist, averageLesson) {
       averageList
   );
 }
-
-//ortalamanin ustunde olanlari yazma
-higherThanAvearage(1, "matematik", notes, averageMathNote);
-higherThanAvearage(2, "German", notes, averageGermanNote);
-higherThanAvearage(3, "English", notes, averageEnglishNote);
-higherThanAvearage(4, "Geography", notes, averageGeographyNote);
-
 /**
  * Sinifin hangi dersde en iyi nota sahip oldugunu gosteren fonksiyon
  */
-
 function findMaxNotes() {
   let averageList = [
     averageMathNote,
@@ -116,10 +87,6 @@ function findMaxNotes() {
     console.log("EN Basarili ders: geography`dir");
   }
 }
-
-// Sinifin hangi dersde en iyi nota sahip oldugunu yazma
-findMaxNotes();
-
 /**
  * Sinifin hangi dersde en dusuk nota sahip oldugunu gosteren fonksiyon
  */
@@ -131,7 +98,6 @@ function findMinNotes() {
     averageGeographyNote,
   ];
   let moreSuccessLesson = Math.min.apply(null, averageList);
-
   if (moreSuccessLesson == averageMathNote) {
     console.log("EN Basarisiz ders matematiktir");
   } else if (moreSuccessLesson == averageGermanNote) {
@@ -142,10 +108,6 @@ function findMinNotes() {
     console.log("EN Basarisiz ders: geography `dir");
   }
 }
-
-// Sinifin hangi dersde en dusuk nota sahip oldugunu yazma
-findMinNotes();
-
 /**
  * Tüm derslerin en iyi ögrencilerini bulan fonksiyon
  * @param {*} pIndex
@@ -165,7 +127,29 @@ function findSuccessStudent(pIndex, pLessonName) {
     successStudent
   );
 }
-
+// Tum derslerin ortlamasini ekrana yazdirma
+let averageMathNote = findAverage(1, notes);
+let averageGermanNote = findAverage(2, notes);
+let averageEnglishNote = findAverage(3, notes);
+let averageGeographyNote = findAverage(4, notes);
+console.log("Matematik dersinin ortalamasi: " + averageMathNote);
+console.log("German dersinin ortalamasi: " + averageGermanNote);
+console.log("English dersinin ortalamasi: " + averageEnglishNote);
+console.log("Geography dersinin ortalamasi: " + averageGeographyNote);
+//70 puan ustu alanlarin isnmlerini yazma
+higher70(1, notes, "Math");
+higher70(2, notes, "German");
+higher70(3, notes, "English");
+higher70(4, notes, "Geography");
+//ortalamanin ustunde olanlari yazma
+higherThanAvearage(1, "matematik", notes, averageMathNote);
+higherThanAvearage(2, "German", notes, averageGermanNote);
+higherThanAvearage(3, "English", notes, averageEnglishNote);
+higherThanAvearage(4, "Geography", notes, averageGeographyNote);
+// Sinifin hangi dersde en iyi nota sahip oldugunu yazma
+findMaxNotes();
+// Sinifin hangi dersde en dusuk nota sahip oldugunu yazma
+findMinNotes();
 //Tüm derslerin en iyi ögrencilerini yazma
 findSuccessStudent(1, "matematik");
 findSuccessStudent(2, "german");
