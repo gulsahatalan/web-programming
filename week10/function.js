@@ -26,7 +26,8 @@ function showProductList() {
 function showShoppingList(pList) {
   let total = 0;
   let shopList = `<table class="table caption-top">
-    <caption class="captionText" >SHOPPING LIST</caption>
+    <caption class="captionText" >SHOPPING LIST
+    <img src="https://cdn4.iconfinder.com/data/icons/for-your-interface-free-samples/128/Cart-256.png" id="shopping-icon" /></caption>
     <tr>
     <th>Name</th>
     <th>Price</th>
