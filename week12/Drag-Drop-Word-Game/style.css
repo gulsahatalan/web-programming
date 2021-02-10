@@ -1,0 +1,45 @@
+main{
+    border:3px solid black;
+    border-radius:20%;
+    width: 70vw;
+    margin: 15vh 15vw;
+    background: burlywood;
+    color: darkmagenta;
+  }
+  #container{
+      width: 300px;
+      display: block;
+      margin: auto;
+      padding-top: 10vh;
+      }
+    
+    
+    #list{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+     
+    }
+    
+    #list li{
+      margin: 10px;
+      cursor: pointer;
+      border: 2px  solid blueviolet;
+      width: 30vw;
+      font-size: 5vh;
+    }
+  
+    #button{
+      display: flex;
+      justify-content: center;
+      margin: 5vh;
+      
+      }
+      #check{
+          background-color: rgb(209, 186, 206);
+          margin-left: 2vw;
+      } 
+      #random{
+        background-color: rgb(209, 186, 206);
+      }
+     
