@@ -1,0 +1,53 @@
+#list {
+  list-style: none;
+}
+
+#list li {
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid blueviolet;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vh;
+  font-size: 5vh;
+  text-align: center;
+  padding-top: 3%;
+  background-color: rgb(189, 236, 214);
+}
+
+#title {
+  text-align: center;
+  color: blueviolet;
+}
+
+#calculation-place {
+  width: 60vw;
+  height: 40vh;
+  border-radius: 40%;
+  background-color: blueviolet;
+  margin: 13% 20%;
+  text-align: center;
+  font-size: 4vw;
+  color: darkkhaki;
+}
+
+#result-number {
+  width: 20%;
+}
+#user-info {
+  border: 2px solid rgb(255, 0, 98);
+  margin-top: 3%;
+}
+.input-group-append {
+  margin-top: 3%;
+  background-color: rgb(245, 101, 221);
+}
+
+#addButon {
+  color: whitesmoke;
+}
+
+#add {
+  background-color: rgb(245, 101, 221);
+  color: whitesmoke;
+}
