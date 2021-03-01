@@ -60,3 +60,10 @@ function selectNewZeland (event){
     document.getElementById("countryName").innerHTML = event.target.value;
 }
 
+// let dateTime = new Date().toLocaleString("en-UK", { timeZone: "america/new_york" });
+//     dateTime = new Date(dateTime);
+
+
+
+// let dateTime = new Date().toLocaleTimeString("en-UK", { timeZone: "america/new_york" });
+//     dateTime = new Date(dateTime);
